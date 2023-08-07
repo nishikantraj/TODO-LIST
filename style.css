@@ -1,0 +1,106 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-image:linear-gradient(120deg, rgb(229, 126, 126),rgb(84, 84, 243),rgb(148, 148, 6));
+  color:white ;
+  font-family: 'Borel', cursive;
+  min-height: 100vh;
+}
+header{
+  font-size: 1.5rem
+}
+header,form{
+  display: flex;
+  min-height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+form input{
+  padding:0.9rem;
+  width: 350px;
+  height: 40px;
+  margin:30px;
+  /* position: relative;
+  left: 60px; */
+  border-radius: 40px ;
+  border: 2px solid rgb(47, 47, 225);
+}
+form button{
+  margin:-20px;
+  height: 25px;
+  width: 35px;
+  /* position: relative;
+  left: 56px; */
+  border-radius: 35px;
+  cursor: pointer;
+  /* background-color: pink; */
+  transition: all 0.3s ease-in-out;
+}
+form button:hover{
+  background-color: rgb(153, 215, 215);
+  color: antiquewhite;
+}
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.todo-list{
+  min-width: 30%;
+  list-style: none;
+}
+.todo{
+  margin: 0.3rem;
+  background: white;
+  color: black;
+  font-size: 1.0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s ease-in;
+}
+.todo li{
+  flex:1;
+}
+.complete-btn{
+  background-color: rgb(155, 231, 155);
+}
+.delete-btn{
+  background-color: rgb(230, 125, 125);
+}
+.complete-btn, .delete-btn{
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.todo-item{
+  padding: 0rem 0.5rem;
+}
+.fa-trash, .fa-check{
+  pointer-events: none;
+}
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+  background: rgb(57, 220, 45);
+}
+.fall{
+  transform: translateY(5rem) rotateZ(20deg) ;
+  opacity: 0;
+}
+.select-list{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+}
+select{
+  outline: none;
+  border: none;
+  color: rgb(188, 195, 4);
+  cursor: pointer;
+  border-radius: 10px;
+}
